@@ -38,11 +38,13 @@ group :development do
 end
 
 group :development, :test do
+	gem 'minitest', '~> 5.9.0'
 	gem 'rspec-rails', '~> 2.0'
 end
 
 group :test do
 	gem 'capybara', '~> 2.1.0'
+	gem 'shoulda-matchers', '~> 2.4.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
